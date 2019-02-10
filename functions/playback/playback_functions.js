@@ -5,18 +5,18 @@
 //      response.send("Hello from Firebase Play!");
 // });
 
-function play() {
+exports.play = function() {
      console.log("Called play");
 }
 
-function pause() {
+exports.pause = function() {
      console.log("Called pause");
 }
 
-function next() {
+exports.next = function {
      console.log("Called next");
 }
 
-function previous() {
+exports.previous = function {
      console.log("Called previous");
 }
