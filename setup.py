@@ -7,7 +7,7 @@ from setuptools import setup
 setup(
     name='server',
     version='0.1.0',
-    packages=['src'],
+    packages=['server'],
     include_package_data=True,
     install_requires=[
         'arrow==0.13.0',
