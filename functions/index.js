@@ -5,5 +5,6 @@ const playback = require('./playback/playback_functions');
 
 exports.helloMelody = functions.https.onRequest((request, response) => {
     var play_str = playback.play()
-    response.send("Hello from " + play_str); 
+    response.send("Hello from " + play_str);
+    console.log(request.body);
 });
