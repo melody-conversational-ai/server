@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Run style checkers and tests
+
+# Stop on errors, print commands
+set -e
+set -x
+
+# Run all unit tests
+pytest -v tests
+
+# Run python style checkers
+pycodestyle src
+pydocstyle src
+pylint --reports=n --disable=cyclic-import --disable=no-member src
+

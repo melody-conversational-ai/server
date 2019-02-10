@@ -1,0 +1,8 @@
+#!/bin/bash
+# serverRun
+
+export FLASK_DEBUG=True
+export FLASK_APP=server
+export SERVER_SETTINGS=config.py
+
+flask run --host 0.0.0.0 --port 8000
