@@ -17,13 +17,13 @@ exports.pause = function() {
      return "Called pause";
 }
 
-exports.next = function {
+exports.next = function() {
      console.log("Called next");
 
      return "Called next";
 }
 
-exports.previous = function {
+exports.previous = function() {
      console.log("Called previous");
 
      return "Called previous";
