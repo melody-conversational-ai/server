@@ -3,3 +3,6 @@ env/*
 
 server.egg-info/
 
+.firebaserc
+firebase.json
+
