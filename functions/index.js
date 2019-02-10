@@ -1,8 +1,9 @@
 const functions = require('firebase-functions');
+const playback = require('./playback/playback_functions');
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
+// // Index.js - Parent API function
 
 exports.helloWorld = functions.https.onRequest((request, response) => {
-     response.send("Hello from Firebase!");
+    var play_str = playback.play()
+    response.send("Hello from " + play_str); 
 });
